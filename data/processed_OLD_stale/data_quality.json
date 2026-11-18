@@ -1,0 +1,15 @@
+{
+  "duplicate_keys": 0,
+  "checks": {
+    "legal_ball_count": 192444,
+    "total_rows": 200999,
+    "matches": 867
+  },
+  "rows_dropped": 0,
+  "frame_shape": {
+    "ball_by_ball": [
+      200999,
+      35
+    ]
+  }
+}

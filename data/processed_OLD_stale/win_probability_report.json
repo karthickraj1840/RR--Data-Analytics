@@ -1,0 +1,6 @@
+{
+  "log_loss": 0.5381481411740273,
+  "coin_flip_baseline": 0.693,
+  "win_probability_mean": 0.48491413437489933,
+  "wpa_mean_abs": 0.021562397396351213
+}

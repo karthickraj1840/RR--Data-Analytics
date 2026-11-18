@@ -1,0 +1,39 @@
+pressure:
+  high_leverage_quantile: 0.85
+  hard_chase_rrr: 10.0
+  hard_chase_balls_left_max: 60
+  death_overs:
+  - 16
+  - 20
+  collapse_wickets: 3
+  collapse_over: 10
+  tight_finish_balls_left_max: 30
+  tight_finish_wp_min: 0.25
+  tight_finish_wp_max: 0.75
+  knockout_signal: 1
+league_weights:
+  IPL: 1.0
+  International: 0.8
+  Emerging: 0.4
+index_weights:
+  wpa: 0.4
+  runs_saved: 0.4
+  consistency: 0.2
+min_balls: 30
+eligibility_min_pressure_balls: 80
+min_ipl_share: 0.3
+all_rounder_eligibility:
+  min_batting_pressure_balls: 100
+  min_bowling_pressure_balls: 100
+opposition_adjustment: false
+selection_predictor:
+  name: role_specific_blend
+  pressure_weight: 0.625
+  overall_weight: 0.375
+  pressure_weight_by_role:
+    batting: 0.75
+    bowling: 0.5
+  prior_strength: 30.0
+selection_role_split:
+  batters: 6
+  bowlers: 4

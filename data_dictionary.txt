@@ -1,0 +1,117 @@
+
+### 6af458274c1e8_data_pack\Data Pack\.DS_Store  (skipped: .ds_store)
+
+### 6af458274c1e8_data_pack\Data Pack\ball_by_ball.csv
+rows=200999, cols=33
+- match_id | int64 | null%=0.0 | unique=867 | min=13511 max=55561
+- innings | int64 | null%=0.0 | unique=4 | min=1 max=4
+- overid | int64 | null%=0.0 | unique=20 | min=1 max=20
+- over_ball_num | int64 | null%=0.0 | unique=13 | min=1 max=13
+- innings_ball_num | int64 | null%=0.0 | unique=136 | min=1 max=136
+- batting_team_id | int64 | null%=0.0 | unique=38 | min=1 max=4444
+- bowling_team_id | int64 | null%=0.0 | unique=38 | min=1 max=4444
+- striker_id | int64 | null%=0.0 | unique=888 | min=8 max=71727
+- striker_name | object | null%=0.0 | unique=885
+- non_striker_id | int64 | null%=0.0 | unique=867 | min=8 max=68410
+- non_striker_name | object | null%=0.0 | unique=864
+- bowler_id | int64 | null%=0.0 | unique=647 | min=23 max=71727
+- bowler_name | object | null%=0.0 | unique=646
+- batting_type | object | null%=0.0 | unique=2 | values=['RHB', 'LHB']
+- bowling_type | object | null%=0.0 | unique=12 | values=['Left-arm fast-medium', 'Right-arm medium-fast', 'Slow left-arm orthodox', 'Right-arm Fast', 'Right-arm fast-medium', 'Right-arm Leg-Break', 'Left-arm medium-fast', 'Right-arm offbreak', 'Left-arm Fast', 'Right-arm medium', 'Left-arm medium', 'Left-arm Chinaman']
+- batting_order | int64 | null%=0.0 | unique=13 | min=1 max=13
+- runs | int64 | null%=0.0 | unique=7 | min=0 max=6
+- is_four | bool | null%=0.0 | unique=2 | min=False max=True
+- is_six | bool | null%=0.0 | unique=2 | min=False max=True
+- is_wicket | bool | null%=0.0 | unique=2 | min=False max=True
+- dismissal_type_id | float64 | null%=94.6 | unique=8 | min=1.0 max=10.0
+- dismissal_type | object | null%=94.6 | unique=9 | values=['Bowled', 'Caught', 'Stump', 'RunOut', 'LBW', 'Retire Out', 'Hit Wicket', 'Obstracting the field', 'Obstructing the field']
+- dismissed_player_id | float64 | null%=94.6 | unique=814 | min=8.0 max=71727.0
+- extras_type | object | null%=94.1 | unique=6 | values=['wide', 'legbyes', 'byes', 'Overstep', 'other', 'Penalty']
+- extras1_runs | int64 | null%=0.0 | unique=6 | min=0 max=5
+- extras_2_runs | int64 | null%=0.0 | unique=3 | min=0 max=4
+- pace_or_spin | object | null%=0.0 | unique=2 | values=['Pace', 'Spin']
+- bowl_speed | float64 | null%=0.0 | unique=1033 | min=-1.0 max=1456.1
+- stroke | object | null%=3.1 | unique=30
+- delivery_style | object | null%=0.2 | unique=34
+- over_or_around | object | null%=0.2 | unique=2 | values=['Over', 'Around']
+- on_or_off | object | null%=0.0 | unique=2 | values=['Off-side', 'On-side']
+- delivery_ist_time | object | null%=0.0 | unique=200826
+
+### 6af458274c1e8_data_pack\Data Pack\competitions.csv
+rows=141, cols=4
+- comp_id | int64 | null%=0.0 | unique=141 | min=1331 max=3787
+- comp_name | object | null%=0.0 | unique=141
+- match_format | object | null%=0.0 | unique=2 | values=['T20I', 'T20']
+- season | object | null%=0.0 | unique=8 | values=['2026', '2022', '2023', '2024', '2025', '2022/23', '2023/24', '2024/25']
+
+### 6af458274c1e8_data_pack\Data Pack\competition_team_player_mapping.csv
+rows=6413, cols=6
+- comp_id | int64 | null%=0.0 | unique=140 | min=1331 max=3787
+- comp_name | object | null%=0.0 | unique=140
+- team_id | int64 | null%=0.0 | unique=38 | min=1 max=4444
+- team_name | object | null%=0.0 | unique=38
+- player_id | int64 | null%=0.0 | unique=1217 | min=8 max=71727
+- player_name | object | null%=0.0 | unique=1210
+
+### 6af458274c1e8_data_pack\Data Pack\matches.csv
+rows=883, cols=22
+- match_id | int64 | null%=0.0 | unique=883 | min=13511 max=55561
+- comp_id | int64 | null%=0.0 | unique=138 | min=1331 max=3787
+- match_number | int64 | null%=0.0 | unique=75 | min=1 max=75
+- match_date | object | null%=0.0 | unique=686
+- stage | object | null%=0.0 | unique=7 | values=['League', 'Qualifier', 'Eliminator', 'Final', 'Others', 'Semi Final', 'Super 4']
+- venue_id | int64 | null%=0.0 | unique=98 | min=1 max=3692
+- venue_country | object | null%=0.0 | unique=17
+- home_team_id | int64 | null%=0.0 | unique=36 | min=1 max=4444
+- home_team | object | null%=0.0 | unique=36
+- away_team_id | int64 | null%=0.0 | unique=36 | min=1 max=4444
+- away_team | object | null%=0.0 | unique=36
+- home_team_captain_id | float64 | null%=5.0 | unique=89 | min=8.0 max=39444.0
+- away_team_captain_id | float64 | null%=5.1 | unique=98 | min=8.0 max=39444.0
+- toss_win_team_id | float64 | null%=1.7 | unique=37 | min=1.0 max=4444.0
+- toss_opted | object | null%=1.7 | unique=2 | values=['Fielding', 'Batting']
+- man_of_the_match | int64 | null%=0.0 | unique=293 | min=0 max=67864
+- first_inn_revised_overs | float64 | null%=97.2 | unique=13 | min=30.0 max=114.0
+- second_inn_revised_overs | float64 | null%=97.2 | unique=12 | min=30.0 max=114.0
+- revised_target | float64 | null%=97.4 | unique=23 | min=33.0 max=213.0
+- knock_out | int64 | null%=0.0 | unique=2 | min=0 max=1
+- win_team_id | float64 | null%=4.6 | unique=36 | min=1.0 max=4444.0
+- result | object | null%=0.0 | unique=670
+
+### 6af458274c1e8_data_pack\Data Pack\playing_eleven.csv
+rows=28381, cols=9
+- match_id | int64 | null%=0.0 | unique=880 | min=13511 max=55561
+- team_id | int64 | null%=0.0 | unique=38 | min=1 max=4444
+- player_id | int64 | null%=0.0 | unique=1082 | min=8 max=71727
+- batting_order | float64 | null%=30.6 | unique=13 | min=1.0 max=13.0
+- is_played | bool | null%=0.0 | unique=2 | min=False max=True
+- is_captain | object | null%=30.5 | unique=2 | values=[False, True]
+- is_wk | object | null%=30.5 | unique=2 | values=[False, True]
+- is_impact | int64 | null%=0.0 | unique=2 | min=0 max=1
+- is_impact_off | int64 | null%=0.0 | unique=2 | min=0 max=1
+
+### 6af458274c1e8_data_pack\Data Pack\Round 1 Problem Statement _ SupeRR Selector Season 2.docx.pdf  (skipped: .pdf)
+
+### 6af458274c1e8_data_pack\Data Pack\teams.csv
+rows=353, cols=3
+- comp_id | int64 | null%=0.0 | unique=141 | min=1331 max=3787
+- team_id | int64 | null%=0.0 | unique=38 | min=1 max=4444
+- team_name | object | null%=0.0 | unique=38
+
+### 6af458274c1e8_data_pack\__MACOSX\._Data Pack  (skipped: ._data pack)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._.DS_Store  (skipped: .ds_store)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._ball_by_ball.csv  (error: 'utf-8' codec can't decode byte 0xb7 in position 37: invalid start byte)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._competitions.csv  (error: 'utf-8' codec can't decode byte 0xa2 in position 37: invalid start byte)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._competition_team_player_mapping.csv  (error: 'utf-8' codec can't decode byte 0xa2 in position 37: invalid start byte)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._matches.csv  (error: 'utf-8' codec can't decode byte 0xa2 in position 37: invalid start byte)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._playing_eleven.csv  (error: 'utf-8' codec can't decode byte 0xa2 in position 37: invalid start byte)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._Round 1 Problem Statement _ SupeRR Selector Season 2.docx.pdf  (skipped: .pdf)
+
+### 6af458274c1e8_data_pack\__MACOSX\Data Pack\._teams.csv  (error: 'utf-8' codec can't decode byte 0xa2 in position 37: invalid start byte)

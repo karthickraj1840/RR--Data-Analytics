@@ -1,0 +1,42 @@
+{
+  "top_10_inclusion_probability": {
+    "8": 1.576,
+    "47": 1.499,
+    "88": 1.499,
+    "109": 1.498,
+    "126": 1.484,
+    "142": 1.507,
+    "143": 1.49,
+    "147": 1.407,
+    "152": 1.511,
+    "161": 1.464
+  },
+  "robust_picks": [
+    {
+      "player_id": 8,
+      "player_name": "Mahendra Singh Dhoni",
+      "pressure_index": 1.57559835727617
+    },
+    {
+      "player_id": 47,
+      "player_name": "Virat Kohli",
+      "pressure_index": 1.4990190619952626
+    },
+    {
+      "player_id": 88,
+      "player_name": "Faf du Plessis",
+      "pressure_index": 1.4993601989852412
+    },
+    {
+      "player_id": 109,
+      "player_name": "Wriddhiman Saha",
+      "pressure_index": 1.4976048131145974
+    },
+    {
+      "player_id": 126,
+      "player_name": "Rohit Sharma",
+      "pressure_index": 1.4835960739465313
+    }
+  ],
+  "fragile_picks": []
+}
